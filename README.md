@@ -6,7 +6,7 @@ Steps to execute
 
 install request using "pip install request"
 
-clone the below supported tool and place it besides the tracker.py file
+clone the below supported tool, extract them and place it besides the tracker.py file
 
 https://github.com/lightbody/browsermob-proxy/releases/download/browsermob-proxy-2.1.4/browsermob-proxy-2.1.4-bin.zip
 https://github.com/AutomatedTester/browsermob-proxy-py.git
