@@ -2,7 +2,8 @@ import sys
 import time
 import json
 import os
-from urlparse import urlparse
+from urllib.parse import urlparse
+#from urlparse import urlparse
 sys.path.append('browsermob-proxy-py-master')
 sys.path.append('browsermob-proxy-2.1.4/bin')
 from browsermobproxy import Server
@@ -54,8 +55,7 @@ for entry in data['log']['entries']:
         if 'mimeType' in entry['response']['content']:
             mimetype = entry['response']['content']['mimeType']
 	    if (urlparts.hostname.find('v2gcar23gi.execute-api.us-east-1.amazonaws.com') >= 0 and mimetype== 'application/json'):
-       		 print '%s,"%s",%s,%s,%s' % (i, url, urlparts.hostname, size_bytes,entry['response']['content']['text'])
-		 har_data=json.dumps(entry['response']['content']['text'])		
+       		 har_data=json.dumps(entry['response']['content']['text'])		
 		 myFile.write( har_data )
 
 myFile.close()
