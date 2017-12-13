@@ -19,8 +19,13 @@ run the browsermob which is located in browsermob-proxy-2.1.4/lib using below co
  java -jar  browsermob-dist-2.1.4.jar 
 
 Place ip in "localhost" location in py file.
+
 run your scripts now
-----------------
+====================
 python tracker.py 
 
 it will write response besides the file with the name "response.har".
+
+Place input.csv file besides the script.py file, will generate no of response files with the source and destination names.
+
+Ex: "INNSA_DEHAM.har"
